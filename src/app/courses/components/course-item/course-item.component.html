@@ -1,0 +1,29 @@
+<div [appHighlight]="course.publishedAt" class="card">
+  <div class="card-img" [ngStyle]="{'background-image': 'url(' + course.image + ')'}">
+    <div class="card-play-btn" (click)="playVideo()">
+      <i class="material-icons">play_circle_outline</i>
+    </div>
+    <div class="card-duration">
+      {{course.duration | duration}}
+    </div>
+  </div>
+  <div class="card-block flex-wrap-row">
+    <div class="card-description">
+      <h4 class="card-title">{{course.title}}</h4>
+      <mat-icon *ngIf="course.topRate" class="star-material">star</mat-icon>
+      <p class="card-text">{{course.description}}</p>
+      <span>
+        Author: {{course.author}}</span>
+      <span class="">
+        Published: {{course.publishedAt | date:'short'}}
+      </span>
+      <!--<div class="">-->
+        <!---->
+      <!--</div>-->
+    </div>
+    <div class="group-button">
+      <button mat-raised-button color="accent">Edit</button>
+      <button mat-raised-button color="warn" (click)="deleteItem(course)">Delete</button>
+    </div>
+  </div>
+</div>

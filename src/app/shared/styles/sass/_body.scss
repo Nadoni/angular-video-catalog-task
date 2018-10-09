@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+  //height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+body {
+  font-family: $primary-font, Arial, sans-serif;
+  user-select: none;
+  font-size: $m-size;
+  //height: 100vh;
+  //position: relative;
+  background-color: $aсcent-color-light;
+}
+
+
+.wrapper {
+  max-width: 1250px;
+  //width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.flex-wrap {
+  &-col{
+    @include flexbox(flex, column, center, center)
+  }
+  &-row {
+    @include flexbox(flex, row, center, center)
+  }
+}

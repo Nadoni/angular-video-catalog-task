@@ -1,0 +1,29 @@
+// Mixins
+@mixin flexbox($display, $direction, $just-cont, $align-items:null, $grow:null) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $just-cont;
+  align-items: $align-items;
+  flex-grow: $grow;
+}
+
+@mixin size($width, $height, $max-width:null, $max-height:null){
+  width: $width;
+  height: $height;
+  max-height: $max-height;
+  max-width: $max-width;
+}
+
+@mixin text($font_size, $family, $color, $text-align:null, $font-weight:null, $word-wrap:null){
+  font-family: $family;
+  font-size: $font_size;
+  color: $color;
+  text-align: $text-align;
+  font-weight: $font-weight;
+  word-wrap: $word-wrap;
+}
+
+@mixin space($padding, $margin){
+  padding: $padding;
+  margin: $margin;
+}

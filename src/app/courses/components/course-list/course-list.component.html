@@ -1,0 +1,15 @@
+<div class="courses-container">
+  <app-filter-panel
+  (filteredSearch)="changeListCourseByPipe($event)"></app-filter-panel>
+  <app-course-item
+    *ngFor="let course of courses | orderBy: 'publishedAt'"
+    [course]="course"
+
+    (playCourse)="playVideo ($event)"
+    (deleteCourse)="deleteCourse($event)"
+  ></app-course-item>
+  <div *ngIf="courses.length < 1" class="none-data">
+    <p>NO DATA. FEEL FREE TO ADD NEW COURSE</p>
+  </div>
+</div>
+

@@ -1,0 +1,105 @@
+@import url(~normalize.css/normalize.css);
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Varela Round Regular"), local("VarelaRound-Regular"), url(https://fonts.gstatic.com/s/varelaround/v9/w8gdH283Tvk__Lua32TysjIfp8uP.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+html {
+  font-size: 62.5%;
+  min-height: 100vh;
+  position: relative; }
+
+body {
+  font-family: "Varela Round", Arial, sans-serif;
+  user-select: none;
+  font-size: 1.7rem;
+  background-color: #f3f3f3; }
+
+.wrapper {
+  max-width: 1250px;
+  padding: 0 40px;
+  margin: 0 auto; }
+
+.flex-wrap-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+.flex-wrap-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+/* Basic - Primary */
+/* Basic - Secondary */
+/* Additionally */
+footer {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  footer .footer {
+    display: table;
+    height: 60px;
+    table-layout: fixed;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #e26f93, #fa9b46); }
+    footer .footer__container {
+      max-width: 1024px;
+      padding: 2.5rem;
+      margin: auto;
+      font-size: 1.25rem; }
+    footer .footer__text {
+      text-align: center;
+      color: #fafafa; }
+
+.breadcrumb {
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, #e26f93, #fa9b46);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .breadcrumb__panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: baseline; }
+  .breadcrumb__form {
+    display: flex;
+    align-items: baseline; }
+  .breadcrumb mat-chip {
+    background-image: linear-gradient(to bottom right, #e26f93, #fa9b46) !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+  .breadcrumb .mat-chip-list-wrapper .mat-chip.mat-primary.mat-standard-chip {
+    background: #7f993a; }
+  .breadcrumb .mat-chip-list-wrapper .mat-chip.mat-standard-chip {
+    border-radius: 0;
+    padding: 0;
+    text-decoration: none;
+    box-shadow: none;
+    background: #7f993a; }
+    .breadcrumb .mat-chip-list-wrapper .mat-chip.mat-standard-chip a {
+      height: 64px;
+      line-height: 64px;
+      padding: 0 18px;
+      font-family: Arial, sans-serif;
+      letter-spacing: .15px;
+      font-size: 1.125rem;
+      text-decoration: none;
+      color: #ff7974;
+      background: #1dacc2; }
+      .breadcrumb .mat-chip-list-wrapper .mat-chip.mat-standard-chip a:hover, .breadcrumb .mat-chip-list-wrapper .mat-chip.mat-standard-chip a:focus {
+        color: #a6f1fd;
+        text-decoration: none; }
+  .breadcrumb .mat-chip-list-wrapper .mat-standard-chip {
+    border-radius: 0px; }
+
+/*# sourceMappingURL=breadcrumb.component.css.map */

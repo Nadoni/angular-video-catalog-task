@@ -1,0 +1,24 @@
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 mat-dialog-title class="modal-title">Confirm {{title}} removing</h2>
+      </div>
+      <div class="modal-body">
+        <mat-dialog-content>
+          Are you sure you wish to delete {{author}}: {{title}}?
+        </mat-dialog-content>
+      </div>
+      <div class="modal-footer">
+        <mat-dialog-actions>
+          <button class="mat-raised-button" (click)="close()">
+            Close
+          </button>
+          <button class="mat-raised-button mat-primary" (click)="delete()">
+            Delete
+          </button>
+        </mat-dialog-actions>
+      </div>
+    </div>
+  </div>
+</div>
