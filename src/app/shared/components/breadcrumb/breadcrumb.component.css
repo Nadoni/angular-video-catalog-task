@@ -1,4 +1,7 @@
 @import url(~normalize.css/normalize.css);
+/* Basic - Primary */
+/* Basic - Secondary */
+/* Additionally */
 @font-face {
   font-family: 'Varela Round';
   font-style: normal;
@@ -32,9 +35,52 @@ body {
   justify-content: center;
   align-items: center; }
 
-/* Basic - Primary */
-/* Basic - Secondary */
-/* Additionally */
+.mat-card-actions .mat-raised-button {
+  padding: 6px 18px; }
+
+.button {
+  display: inline-block;
+  padding: 1.25rem 4.8rem;
+  width: 24rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s; }
+  .button--success {
+    border: 2px solid #f39c12;
+    color: white;
+    margin: 1.25rem;
+    background-color: transparent; }
+    .button--success:hover {
+      color: black;
+      background: #f7ba5b; }
+    .button--success:active {
+      background: #b06f09; }
+  .button--primary {
+    margin: 1.25rem;
+    border: 2px solid #8f47b0;
+    color: white;
+    background: #8f47b0; }
+    .button--primary:hover {
+      background: #b07ac9; }
+    .button--primary:focus, .button--primary:active {
+      background: #633179; }
+  .button--group {
+    margin: 0 10px; }
+  .button--rounded {
+    outline: none;
+    border-radius: 50%; }
+  .button--disabled {
+    opacity: 0.6; }
+    .button--disabled:hover {
+      cursor: initial;
+      pointer-events: none; }
+
 footer {
   display: block;
   position: absolute;
