@@ -1,22 +1,13 @@
-//@import "../../../shared/styles/sass/_variables.scss";
 @import "../../../shared/styles/_index.scss";
 .breadcrumb {
   width: 100%;
-  //height: $header-height * 3;
   overflow: hidden;
-  //background: $white-color;
   background-image: linear-gradient(to bottom right, #e26f93, #fa9b46);
    @include flexbox(flex, column, center, center);
   &__wrap {
-    //@include flexbox(flex, column, space);
-    //padding: 20px;
-    //width: 500px;
-    //margin-left: 100px;
+    //height: $header-height;
   }
-
-
   &__panel {
-//width: inherit;
     @include flexbox(flex, row, space-between, center);
     align-items: baseline;
   }
@@ -24,44 +15,10 @@
     display: flex;
     align-items: baseline;
   }
-
   mat-chip{
-    background-image: linear-gradient(to bottom right, #e26f93, #fa9b46) !important;
+    background-image: linear-gradient(to bottom right, #e26f93, #fa9b46);
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-  }
-  .mat-chip-list-wrapper {
-
-    .mat-chip.mat-primary.mat-standard-chip {
-      background: #7f993a;
-    }
-
-    .mat-chip.mat-standard-chip {
-      border-radius: 0;
-      //background: none;
-      padding: 0;
-      text-decoration: none;
-      box-shadow: none;
-      background: #7f993a;
-      a {
-        height: $header-height;
-        line-height: $header-height;
-        padding: 0 18px;
-        font-family: Arial, sans-serif;
-        letter-spacing: .15px;
-        font-size: 1.125rem;
-        text-decoration: none;
-        color: $white;
-        background: #1dacc2;
-        &:hover,&:focus {
-          color: #a6f1fd;
-          text-decoration: none;
-        }
-      }
-    }
-    .mat-standard-chip {
-      border-radius: 0px;
-    }
   }
 }

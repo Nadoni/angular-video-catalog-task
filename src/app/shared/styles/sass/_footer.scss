@@ -1,8 +1,5 @@
 footer {
   display: block;
-  //max-width: 1024px;
-  //margin-top: -60px;
-  //position: fixed;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -10,13 +7,10 @@ footer {
   .footer {
     display: table;
     height: 60px;
-    //padding: 0 20px;
     table-layout: fixed;
     width: 100%;
-    //background: $white-color;
     background-image: linear-gradient(to bottom right, #e26f93, #fa9b46);
     &__container {
-      //width: 100%;
       max-width: 1024px;
       @include space($l-size, auto);
       font-size: $s-size;
