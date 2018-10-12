@@ -1,6 +1,6 @@
 <div class="courses-container">
-  <app-filter-panel
-  (filteredSearch)="changeListCourseByPipe($event)"></app-filter-panel>
+  <app-toolbox-panel
+  (filteredSearch)="changeListCourseByPipe($event)"></app-toolbox-panel>
   <app-course-item
     *ngFor="let course of courses | orderBy: 'publishedAt'"
     [course]="course"

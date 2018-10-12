@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {coursesList} from '../../course.mock-data';
 import {Observable, of, throwError} from 'rxjs';
-import {ICourseModel} from '../interface/courses.model';
+import {ICourseModel} from '../../interface/courses.model';
 import {catchError, filter, flatMap, map, switchMap} from 'rxjs/operators';
 
 const courseVideoListObservable: Observable<Array<ICourseModel>> = of(coursesList);

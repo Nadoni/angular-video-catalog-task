@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {CoursesService} from '../services/courses.service';
-import {ICourseModel} from '../interface/courses.model';
+import {ICourseModel} from '../../interface/courses.model';
 import {SearchService} from '../../../core/services/search.service';
 import {Observable, Subject} from 'rxjs';
 import {FilterPipe} from '../../../shared/pipes/filter.pipe';
