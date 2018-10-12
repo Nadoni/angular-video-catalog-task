@@ -1,0 +1,54 @@
+.button {
+  display: inline-block;
+  padding: $s-size $xxl-size;
+  width: $xxl-size * 5;
+  border: 2px solid $black-color;
+  border-radius: 10px;
+  text-align: center;
+  font-size: $m-size;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+  &--success {
+    border: 2px solid $success-color;
+    color: $white-color;
+    margin: $s-size;
+    background-color: transparent;
+    &:hover {
+      color: $black-color;
+      background: lighten($success-color, 15%);
+    }
+    &:active {
+      background: darken($success-color, 15%);
+    }
+  }
+  &--primary {
+    margin: $s-size;
+    border: 2px solid $primary-color;
+    color: $white-color;
+    background: $primary-color;
+    &:hover {
+      background: lighten($primary-color, 15%);
+    }
+    &:focus, &:active {
+      background: darken($primary-color, 15%);
+    }
+  }
+  &--group {
+    margin: 0 10px;
+  }
+  &--rounded {
+    outline: none;
+    border-radius: 50%;
+  }
+  &--disabled {
+    opacity: 0.6;
+    &:hover {
+      cursor: initial;
+      pointer-events: none;
+    }
+  }
+
+}
