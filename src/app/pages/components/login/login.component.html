@@ -1,0 +1,49 @@
+<section class="login flex-wrap-row">
+  <div class="login-welcome__wrap">
+    <h1>Welcome</h1>
+    <p>To the Angular global mentoring program, here you can find courses that cover all topics needed to start your own Angular application.</p>
+  </div>
+  <form class="login-form" [formGroup]="loginFrom" (ngSubmit)="logIn(loginFrom.value)">
+    <!--<h2>Login Form</h2>-->
+    <mat-card-header class="login-header">
+      <mat-card-title>Login Form</mat-card-title>
+    </mat-card-header>
+    <div class="login-field__group">
+      <mat-form-field>
+        <input
+          matInput
+          type="email"
+          placeholder="Email"
+          [formControl]="loginFrom.controls['email']"
+          [errorStateMatcher]="errorMatcher"
+        >
+        <!--<mat-error *ngIf="loginFrom.controls['email'].hasError('required') || loginFrom.controls['email'].hasError('email') ">-->
+          <!--Please enter valid Email!-->
+        <!--</mat-error>-->
+        <!--&& (loginFrom.get('email').dirty || loginFrom.get('email').touched)-->
+        <mat-error *ngFor="let validation of accountValidationMessages.email">
+          <mat-error
+            class="mat-error"
+            *ngIf="loginFrom.get('email').hasError(validation.type)"
+          >{{validation.message}}</mat-error>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="password"
+          placeholder="Password"
+          [formControl]="loginFrom.controls['password']"
+        >
+        <mat-error *ngFor="let validation of accountValidationMessages.password">
+          <mat-error *ngIf="loginFrom.controls['password'].hasError(validation.type)">
+            {{validation.message}}
+          </mat-error>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <mat-card-actions>
+      <button mat-raised-button type="submit" [disabled]="!loginFrom.valid">LogIn</button>
+    </mat-card-actions>
+  </form>
+</section>

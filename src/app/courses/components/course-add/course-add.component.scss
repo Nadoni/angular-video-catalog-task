@@ -1,0 +1,10 @@
+@import "../../../shared/styles/_index.scss";
+
+.course {
+  @include flexbox(flex, column, center, center);
+  @include size(600px, 650px);
+
+  &-form {
+    width: 100%;
+  }
+}

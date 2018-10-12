@@ -1,0 +1,32 @@
+@import "../../../shared/styles/_index.scss";
+
+.not-found {
+  height: 100vh;
+  //background: #ECECEC;
+  padding: 0;
+  text-align: center;
+  //margin: -30px;
+  @include flexbox(flex, column, center, center);
+  position: relative;
+  white-space: nowrap;
+  //background-color: #2F3242;
+  background-color: $secondary-color;
+  //@mixin text($font_size, $family, $color, $text-align:null, $font-weight:null, $word-wrap:null){
+  &__message {
+    position: absolute;
+    @include size(500px, fit-content, 700px, 500px);
+    @include flexbox(flex, column, space-between, center);
+    //left: 50%;
+    //top: 50%;
+    //transform: translate(-50%, -50%);
+    color: $white-color;
+
+    h1 {
+      @include text($xxl-size, "Helvetica", $white-color);
+    }
+    a {
+      color: $white-color;
+    }
+
+  }
+}
