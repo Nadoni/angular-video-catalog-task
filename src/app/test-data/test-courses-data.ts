@@ -9,6 +9,7 @@ export const testCoursesData = [
       ' Accusantium alias aliquam architecto asperiores assumenda, ' +
       'dolorem enim est et exercitationem impedit iure nemo, obcaecati, odit quas rerum sit tempora totam voluptatum.',
     image: './assets/images/ang1.jpg',
+    topRate: true,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const testCoursesData = [
       'Accusantium alias aliquam architecto asperiores assumenda, ' +
       'dolorem enim est et exercitationem impedit iure nemo, obcaecati, odit quas rerum sit tempora totam voluptatum.',
     image: './assets/stuff/men/shoes-man.png',
+    topRate: false,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ export const testCoursesData = [
       'Accusantium alias aliquam architecto asperiores assumenda, ' +
       'dolorem enim est et exercitationem impedit iure nemo, obcaecati, odit quas rerum sit tempora totam voluptatum.',
     image: './assets/stuff/men/shoes-man.png',
+    topRate: true
   }
 ];
 

@@ -30,3 +30,9 @@ body {
     @include flexbox(flex, row, center, center)
   }
 }
+
+.mat-card-actions {
+  .mat-raised-button {
+    padding: 6px 18px;
+  }
+}

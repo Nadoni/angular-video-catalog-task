@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import {HeaderComponent} from './components/header/header.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import {MaterialModule} from '../material.module';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import {DurationPipe} from './pipes/duration.pipe';
 import {HighlightDirective} from './directives/highlight.directive';
-import {FilterPanelComponent} from './components/filter-panel/filter-panel.component';
+import {ToolboxPanelComponent} from './components/toolbox-panel/toolbox-panel.component';
 import {OrderByPipe} from './pipes/order-by.pipe';
 import {FilterPipe} from './pipes/filter.pipe';
 import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
@@ -16,12 +16,13 @@ import { ConfirmationDialogComponent } from './components/confirmation-dialog/co
   imports: [
     CommonModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   declarations: [
     HeaderComponent,
     BreadcrumbComponent,
-    FilterPanelComponent,
+    ToolboxPanelComponent,
     FooterComponent,
     DurationPipe,
     OrderByPipe,
@@ -32,7 +33,7 @@ import { ConfirmationDialogComponent } from './components/confirmation-dialog/co
   exports: [
     HeaderComponent,
     BreadcrumbComponent,
-    FilterPanelComponent,
+    ToolboxPanelComponent,
     FooterComponent,
     DurationPipe,
     OrderByPipe,

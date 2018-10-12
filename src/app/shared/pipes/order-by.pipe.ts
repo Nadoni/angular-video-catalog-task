@@ -1,5 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import {ICourseModel} from '../../courses/components/interface/courses.model';
+import {ICourseModel} from '../../courses/interface/courses.model';
 
 @Pipe({
   name: 'orderBy',

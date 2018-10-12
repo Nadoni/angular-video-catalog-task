@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FilterPanelComponent } from './filter-panel.component';
+import { ToolboxPanelComponent } from './toolbox-panel.component';
 
-describe('FilterPanelComponent', () => {
-  let component: FilterPanelComponent;
-  let fixture: ComponentFixture<FilterPanelComponent>;
+describe('ToolboxPanel', () => {
+  let component: ToolboxPanelComponent;
+  let fixture: ComponentFixture<ToolboxPanelComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FilterPanelComponent ]
+      declarations: [ ToolboxPanelComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FilterPanelComponent);
+    fixture = TestBed.createComponent(ToolboxPanelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

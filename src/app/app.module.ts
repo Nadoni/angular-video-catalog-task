@@ -7,6 +7,8 @@ import {MaterialModule} from './material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CoursesModule} from './courses/courses.module';
 import {CoreModule} from './core/core.module';
+import {AppRoutingModule} from './app-routing.module';
+import {PagesModule} from './pages/pages.module';
 // import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
@@ -21,7 +23,9 @@ import {CoreModule} from './core/core.module';
     CoreModule,
     SharedModule,
     MaterialModule,
-    CoursesModule
+    PagesModule,
+    CoursesModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

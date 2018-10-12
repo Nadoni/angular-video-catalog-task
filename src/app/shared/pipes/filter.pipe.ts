@@ -1,13 +1,12 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import {ICourseModel} from '../../courses/components/interface/courses.model';
-import {CoursesService} from '../../courses/components/services/courses.service';
+import {ICourseModel} from '../../courses/interface/courses.model';
 
 @Pipe({
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
 
-  constructor(private courseService: CoursesService) {
+  constructor() {
 
   }
 

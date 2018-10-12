@@ -1,6 +1,6 @@
 import {OrderByPipe} from './order-by.pipe';
-import {testCoursesData} from './test-courses-data';
-import {ICourseModel} from '../../courses/components/interface/courses.model';
+import {testCoursesData} from '../../test-data/test-courses-data';
+import {ICourseModel} from '../../courses/interface/courses.model';
 
 describe('OrderByPipe', () => {
   let pipe: OrderByPipe;

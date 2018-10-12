@@ -1,9 +1,9 @@
 import {HighlightDirective} from './highlight.directive';
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {Component, DebugElement} from '@angular/core';
-import {testCoursesData} from '../pipes/test-courses-data';
+import {testCoursesData} from '../../test-data/test-courses-data';
 import {By} from '@angular/platform-browser';
-import {ICourseModel} from '../../courses/components/interface/courses.model';
+import {ICourseModel} from '../../courses/interface/courses.model';
 import { BorderColors } from '../constants/constants';
 
 @Component({
